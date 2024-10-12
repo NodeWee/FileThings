@@ -1,0 +1,48 @@
+.setting-row {
+    @apply flex flex-row px-4 py-2 rounded-md hover:bg-default-50 duration-1000;
+}
+.setting-row-title {
+    @apply text-nowrap font-bold flex flex-row items-center;
+}
+.setting-row-summary,
+.setting-row-more {
+    @apply opacity-60 text-small;
+}
+.setting-row-action {
+    @apply ml-auto flex flex-row flex-wrap justify-end gap-1;
+}
+.app-title {
+    /* position: fixed; */
+    width: fit-content;
+    /* left: 46%; // middle */
+    /* right: 1.2rem; */
+    /* bottom: 3.2rem; */
+
+    color: var(--glow-color);
+    border-radius: 0.45em;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    text-align: right;
+
+    /* transform: translate(-10%, 30%) skew(10deg) rotate(-10deg); */
+    transform: translate(-5%, 50%) skew(60deg, -30deg) scaleY(0.66667);
+    /* transform: skew(0deg, -30deg) scaleY(1.33333); */
+
+    color: #252527;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0 1px 0 #4a4a4e, -1px -1px 0 #4a4a4e,
+        /*main 3d shadow*/ -1px 0px 0 #343437, -2px 1px 0 #343437,
+        -3px 2px 0 #313134, -4px 3px 0 #2f2f31, -5px 4px 0 #2c2c2f,
+        -6px 5px 0 #2a2a2c, -7px 6px 0 #27272a, -8px 7px 0 #252527,
+        -9px 8px 0 #232324, -10px 9px 0 #202022, -11px 10px 0 #1e1e1f,
+        -12px 11px 0 #1b1b1d, -13px 12px 0 #19191a, -14px 13px 0 #161617,
+        -15px 14px 0 #141415, -16px 15px 0 #111112;
+
+    opacity: 0.5;
+}
+.app-title:hover {
+    color: #ddd;
+    text-shadow: 0 0 6px #ddd, 0 0 18px #ddd, 0 0 36px #ddd, 0 0 72px #d09;
+    animation: text-flicker 15s linear infinite;
+}

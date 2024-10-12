@@ -1,0 +1,52 @@
+/* the file is first imported */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+    min-width: 420px;
+    min-height: 380px;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#app-popover {
+    position: fixed;
+    left: 1rem;
+    bottom: -20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    /* border: 1px solid var(--clr-card-bg); */
+    /* background: var(--clr-bg); */
+    padding: 1rem;
+    border-radius: 1rem;
+
+    font-size: 0.8em;
+    /* text-shadow: 0 0 6px #ddd, 0 0 18px #ddd, 0 0 36px #ddd, 0 0 72px #d09; */
+    box-shadow: 0 0 3px #666, 0 0 9px #666, 0 0 27px #666;
+
+    /* transition: bottom 2s ease-in-out; */
+}
+
+#app-popover.show {
+    bottom: 1rem;
+    animation-duration: calc(var(--animate-duration) * 5);
+    animation-name: bounceInUp;
+}
+
+.bottom-base-line {
+    opacity: 0.35;
+    width: 1rem;
+    /* border-radius: 100%; */
+    background: var(--clr-txt-1st);
+    height: 1px;
+    margin: 0.5rem auto;
+}

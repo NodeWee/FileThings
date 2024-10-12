@@ -1,0 +1,22 @@
+/* import at last */
+.max-w-500 {
+    max-width: 500px;
+}
+.max-w-800 {
+    max-width: 800px;
+}
+
+.text-error {
+    color: var(--clr-txt-error);
+}
+.text-color-2 {
+    color: var(--clr-txt-2nd);
+}
+
+.no-cursor {
+    cursor: default;
+}
+svg,
+.no-mouse {
+    pointer-events: none;
+}

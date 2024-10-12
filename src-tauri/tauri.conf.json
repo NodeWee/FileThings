@@ -1,0 +1,44 @@
+{
+    "identifier": "net.filethings.app",
+    "productName": "FileThings",
+    "version": "0.7.3",
+    "build": {
+        "beforeDevCommand": "npm run dev",
+        "devUrl": "http://localhost:1420",
+        "beforeBuildCommand": "npm run build",
+        "frontendDist": "../dist"
+    },
+    "app": {
+        "windows": [
+            {
+                "title": "FileThings",
+                "width": 800,
+                "height": 600,
+                "theme": "Dark"
+            }
+        ],
+        "security": {
+            "csp": null
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ],
+        "resources": ["resources/**/*"]
+    },
+    "plugins": {
+        "updater": {
+            "active": true,
+            "endpoints": ["https://releases.filethings.net/latest/app.json"],
+            "dialog": true,
+            "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDY1NzZGNUJDREM1QzJFMkQKUldRdExsemN2UFYyWmNOZThrR052NkVIVGhCNkdwaTVmM1RlYjNLbHQrN2wxWGNOSHo2WGpTTjcK"
+        }
+    }
+}

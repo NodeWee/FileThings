@@ -1,0 +1,66 @@
+/* 在 index.html 就引入. 可以避免因为 app js 加载有延迟,造成的白屏间隔 */
+
+:root {
+    --clr-bg: rgba(0, 0, 0, 0.72);
+    /* rgb(22, 22, 22); */
+    --clr-card-bg: #323232;
+    --clr-txt-1st: #eee;
+    --clr-txt-2nd: #7b7b7b;
+    --clr-txt-error: #ce0101;
+    --clr-success: #18c964; /* same as NextUI success color */
+    --clr-warning: #f5a423; /* same as NextUI warning color */
+    --clr-warning-light: #61410e;
+    --clr-passion: #df570d;
+    --clr-passion-light: #682905;
+
+    /* --box-shadow-color: rgba(255, 255, 255, 0.2); */
+
+    --animate-duration: 0.8s;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 420px;
+    min-height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html {
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+        0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(
+            18% 28% at 24% 50%,
+            #1c2122 7%,
+            #010a2b00 100%
+        ),
+        radial-gradient(18% 28% at 18% 71%, #26262659 6%, #073aff00 100%),
+        radial-gradient(70% 53% at 36% 76%, #122528 0%, #073aff00 100%),
+        radial-gradient(42% 53% at 15% 94%, #000000ff 7%, #073aff00 100%),
+        radial-gradient(42% 53% at 34% 72%, #000000ff 7%, #073aff00 100%),
+        radial-gradient(18% 28% at 35% 87%, #000000ff 7%, #073aff00 100%),
+        radial-gradient(31% 43% at 7% 98%, #000000ff 24%, #073aff00 100%),
+        radial-gradient(21% 37% at 72% 23%, #4c5b279c 24%, #073aff00 100%),
+        radial-gradient(35% 56% at 91% 74%, #372067f5 9%, #073aff00 100%),
+        radial-gradient(74% 86% at 67% 38%, #295d40f5 24%, #073aff00 100%),
+        linear-gradient(125deg, rgb(23, 53, 75) 1%, rgb(17, 2, 54) 100%);
+}
+body {
+    background: var(--clr-bg);
+}
+
+body * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

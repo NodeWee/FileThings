@@ -1,0 +1,78 @@
+#file-landing {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+
+    color: var(--clr-txt-2nd);
+
+    background: linear-gradient(
+        to right,
+        var(--clr-txt-2nd),
+        0.4,
+        var(--clr-txt-2nd),
+        0.5,
+        var(--clr-success),
+        0.6,
+        var(--clr-txt-2nd),
+        var(--clr-txt-2nd)
+    );
+
+    background: -moz-linear-gradient(
+        left,
+        var(--clr-txt-2nd),
+        0.4,
+        var(--clr-txt-2nd),
+        0.5,
+        var(--clr-success),
+        0.6,
+        var(--clr-txt-2nd),
+        var(--clr-txt-2nd)
+    );
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0, var(--clr-txt-2nd)),
+        color-stop(0.4, var(--clr-txt-2nd)),
+        color-stop(0.5, var(--clr-success)),
+        color-stop(0.6, var(--clr-txt-2nd)),
+        color-stop(1, var(--clr-txt-2nd))
+    );
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-size-adjust: none;
+
+    animation: slide_bg 5s infinite;
+    -moz-animation: slide_bg 5s infinite;
+    -webkit-animation: slide_bg 5s infinite;
+    /* transition: all 0.1s ease-in-out; */
+
+    /* transition: border 0.25s ease-in-out; */
+    background-position-y: center;
+    background-size: 200% 100%;
+}
+
+@keyframes slide_bg {
+    0% {
+        /* position = #file-landing width */
+        background-position-x: -100vw;
+    }
+
+    100% {
+        background-position-x: 5rem;
+    }
+}
+
+#file-landing .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-landing .icon svg {
+    width: 4.2rem;
+    height: 4.2rem;
+}

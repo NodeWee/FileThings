@@ -1,0 +1,30 @@
+.file_function-card {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+
+    margin: 0;
+    padding: 0;
+
+    width: 18rem;
+    min-width: 18rem;
+    max-width: 120rem;
+
+    overflow: hidden;
+
+    color: var(--clr-txt-1st);
+    background-color: var(--clr-card-bg);
+    box-shadow: 0 1px 2px var(--box-shadow-color);
+
+    /* cursor: pointer; */
+    transition: all 0.2s ease-in-out;
+}
+
+.star {
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+}
