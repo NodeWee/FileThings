@@ -1,0 +1,9 @@
+{
+    "transparent": "Transparent",
+    "Tool `tool.exe.brew` not available, please install it first.": "Please install Homebrew first. You need to install it manually.",
+    "Tool `tool.exe.exiftool` not available, please install it first.": "The feature depends on Exiftool. You can choose to install it in the 'Dependencies' page.",
+    "Tool `tool.exe.ffmpeg` not available, please install it first.": "The feature depends on FFmpeg. You can choose to install it in the 'Dependencies' page.",
+    "Tool `tool.exe.magick` not available, please install it first.": "The feature depends on ImageMagick. You can choose to install it in the 'Dependencies' page.",
+    "Tool `tool.exe.pandoc` not available, please install it first.": "The feature depends on Pandoc. You can choose to install it in the 'Dependencies' page.",
+    "Tool `tool.model.briaai_rmbg` not available, please install it first.": "The feature depends on Briaai/rmbg model. You can choose to install it in the 'Dependencies' page."
+}

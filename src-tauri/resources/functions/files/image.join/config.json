@@ -1,0 +1,281 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "zh": "图像拼接",
+            "en": "Image Join"
+        },
+        "summary": {
+            "en": "Join multiple images into one",
+            "zh": "将多张图片拼接成一张"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": [
+            "!/dir",
+            "!/dirs",
+            "!/file",
+            "png",
+            "jpg",
+            "jpeg",
+            "heif",
+            "heic",
+            "webp",
+            "bmp",
+            "gif",
+            "tif",
+            "tiff",
+            "ico",
+            "AAI",
+            "ART",
+            "AVS",
+            "BAYER",
+            "BAYERA",
+            "BGR",
+            "BGRA",
+            "BGRO",
+            "BMP",
+            "BMP2",
+            "BMP3",
+            "CAL",
+            "CALS",
+            "CIN",
+            "CLIP",
+            "CMYK",
+            "CMYKA",
+            "CUR",
+            "DATA",
+            "DCX",
+            "DDS",
+            "DPX",
+            "DXT1",
+            "DXT5",
+            "FARBFELD",
+            "FAX",
+            "FF",
+            "FITS",
+            "FL32",
+            "FTS",
+            "FTXT",
+            "G3",
+            "G4",
+            "GIF",
+            "GIF87",
+            "GRAY",
+            "GRAYA",
+            "GROUP4",
+            "HDR",
+            "HRZ",
+            "ICB",
+            "ICO",
+            "ICON",
+            "INLINE",
+            "IPL",
+            "J2C",
+            "J2K",
+            "JNG",
+            "JP2",
+            "JPC",
+            "JPE",
+            "JPEG",
+            "JPG",
+            "JPM",
+            "JPS",
+            "JPT",
+            "JXL",
+            "MAP",
+            "MASK",
+            "MIFF",
+            "MNG",
+            "MONO",
+            "MPC",
+            "MSL",
+            "MSVG",
+            "MTV",
+            "MVG",
+            "NULL",
+            "OTB",
+            "PAL",
+            "PALM",
+            "PAM",
+            "PBM",
+            "PCD",
+            "PCDS",
+            "PCT",
+            "PCX",
+            "PDB",
+            "PFM",
+            "PGM",
+            "PGX",
+            "PHM",
+            "PICON",
+            "PICT",
+            "PJPEG",
+            "PNG",
+            "PNG00",
+            "PNG24",
+            "PNG32",
+            "PNG48",
+            "PNG64",
+            "PNG8",
+            "PNM",
+            "PPM",
+            "PSB",
+            "PSD",
+            "PTIF",
+            "QOI",
+            "RAS",
+            "RGB",
+            "RGBA",
+            "RGBO",
+            "RGF",
+            "SGI",
+            "SIX",
+            "SIXEL",
+            "STRIMG",
+            "SUN",
+            "TGA",
+            "TIFF",
+            "TIFF64",
+            "UYVY",
+            "VDA",
+            "VICAR",
+            "VID",
+            "VIFF",
+            "VIPS",
+            "VST",
+            "WBMP",
+            "WEBP",
+            "WPG",
+            "XBM",
+            "XPM",
+            "XV",
+            "YCbCr",
+            "YCbCrA",
+            "YUV"
+        ]
+    },
+    "variables": [
+        {
+            "name": "direction",
+            "type": "select",
+            "required": true,
+            "label": {
+                "en": "Direction",
+                "zh": "方向"
+            },
+            "default": "left-to-right",
+            "options": [
+                {
+                    "label": {
+                        "en": "Horizontal (Left to Right)",
+                        "zh": "横向（从左到右）"
+                    },
+                    "value": "left-to-right"
+                },
+                {
+                    "label": {
+                        "en": "Vertical (Top to Bottom)",
+                        "zh": "纵向（从上到下）"
+                    },
+                    "value": "top-to-bottom"
+                }
+            ]
+        },
+        {
+            "name": "spacing",
+            "type": "int",
+            "required": false,
+            "label": {
+                "en": "Spacing",
+                "zh": "间距"
+            },
+            "description": {
+                "en": "Unit: pixels",
+                "zh": "单位: 像素"
+            },
+            "default": 0,
+            "min": 0
+        },
+        {
+            "name": "gravity",
+            "type": "select",
+            "required": true,
+            "label": {
+                "zh": "对齐",
+                "en": "Alignment"
+            },
+            "default": "Center",
+            "options": [
+                {
+                    "label": {
+                        "zh": "居中",
+                        "en": "Center"
+                    },
+                    "value": "Center"
+                },
+                {
+                    "label": {
+                        "zh": "顶部",
+                        "en": "Top"
+                    },
+                    "value": "North"
+                },
+                {
+                    "label": {
+                        "zh": "底部",
+                        "en": "Bottom"
+                    },
+
+                    "value": "South"
+                },
+                {
+                    "label": {
+                        "zh": "左侧",
+                        "en": "Left"
+                    },
+                    "value": "West"
+                },
+                {
+                    "label": {
+                        "zh": "右侧",
+                        "en": "Right"
+                    },
+                    "value": "East"
+                }
+            ]
+        },
+        {
+            "name": "background",
+            "type": "color",
+            "required": false,
+            "label": {
+                "en": "Background Color",
+                "zh": "背景色"
+            },
+            "default": "transparent"
+        },
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true,
+            "is_dir": false,
+            "to_format": "png"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "en": "to Video",
+            "zh": "转视频"
+        },
+        "summary": {
+            "en": "Convert a single frame image to a video with specified duration",
+            "zh": "将单帧静态图片转换为指定时长的视频格式"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": ["jpg", "jpeg", "png", "bmp"]
+    },
+    "variables": [
+        {
+            "name": "duration",
+            "type": "float",
+            "required": true,
+            "label": {
+                "en": "Duration (seconds)",
+                "zh": "时长（秒）"
+            },
+            "min": 1.0,
+            "default": 1.0
+        },
+        {
+            "name": "to_format",
+            "type": "select",
+            "required": true,
+            "label": {
+                "en": "Output Format",
+                "zh": "输出格式"
+            },
+            "options": [
+                { "value": "mp4", "label": "MP4" },
+                { "value": "avi", "label": "AVI" },
+                { "value": "mov", "label": "MOV" },
+                { "value": "flv", "label": "FLV" },
+                { "value": "wmv", "label": "WMV" }
+            ],
+            "default": "mp4"
+        },
+
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true
+        }
+    ]
+}

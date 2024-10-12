@@ -1,0 +1,24 @@
+{
+    "type": "tool.exe",
+    "profile": {
+        "title": { "en": "Pandoc" },
+        "summary": {
+            "en": "Used for converting between document formats",
+            "zh": "用于文档格式之间的转换"
+        },
+        "version": "0.1.0",
+        "website": "https://exiftool.org/"
+    },
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" }
+    },
+    "bin": {
+        "path": {
+            "macos": "pandoc",
+            "windows": "/tools/exe/pandoc/pandoc.exe"
+        },
+        "required_version": { "min": "3.0" },
+        "version_arguments": ["-v"]
+    }
+}

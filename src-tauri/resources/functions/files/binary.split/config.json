@@ -1,0 +1,55 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "en": "Split file",
+            "zh": "切分文件"
+        },
+        "summary": {
+            "en": "Split a file into multiple binary files",
+            "zh": "将文件切分为多个二进制文件"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": ["dat", "zip", "7z", "rar"]
+    },
+    "variables": [
+        {
+            "name": "chunk_size",
+            "type": "int",
+            "label": {
+                "en": "Chunk Size",
+                "zh": "切分大小"
+            },
+            "min": 1,
+            "default": 24000000,
+            "step": 1,
+
+            "unit": {
+                "en": "Bytes",
+                "zh": "字节"
+            },
+            "description": "@human_readable_byte_size"
+        },
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "is_dir": true
+        }
+    ]
+}

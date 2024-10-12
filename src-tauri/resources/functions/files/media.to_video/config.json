@@ -1,0 +1,117 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "en": "to Video",
+            "zh": "转视频"
+        },
+        "summary": {
+            "zh": "转换为指定的视频格式",
+            "en": "Convert to specified Video format"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": [
+            "gif",
+            "apng",
+            "webp",
+            "3g2",
+            "3gp",
+            "3gp2",
+            "3gpp",
+            "3gpp2",
+            "asf",
+            "avi",
+            "divx",
+            "evo",
+            "f4v",
+            "flv",
+            "h264",
+            "h265",
+            "hevc",
+            "m1v",
+            "m2v",
+            "m4v",
+            "mkv",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mts",
+            "mxf",
+            "ogm",
+            "ogv",
+            "rm",
+            "rmvb",
+            "ts",
+            "vob",
+            "webm",
+            "wmv"
+        ]
+    },
+    "variables": [
+        {
+            "name": "to_format",
+            "type": "select",
+            "required": true,
+            "label": {
+                "en": "Output Format",
+                "zh": "输出格式"
+            },
+            "options": [
+                {
+                    "label": "MP4",
+                    "value": "mp4"
+                },
+                {
+                    "label": "WEBM",
+                    "value": "webm"
+                },
+                {
+                    "label": "OGG",
+                    "value": "ogg"
+                },
+                {
+                    "label": "AVI",
+                    "value": "avi"
+                },
+                {
+                    "label": "FLV",
+                    "value": "flv"
+                },
+                {
+                    "label": "MOV",
+                    "value": "mov"
+                },
+                {
+                    "label": "MKV",
+                    "value": "mkv"
+                },
+                {
+                    "label": "WMV",
+                    "value": "wmv"
+                }
+            ]
+        },
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true
+        }
+    ]
+}

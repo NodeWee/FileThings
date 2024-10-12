@@ -1,0 +1,24 @@
+{
+    "type": "tool.exe",
+    "profile": {
+        "title": { "en": "ImageMagick" },
+        "summary": {
+            "en": "Used for converting and editing bitmap images",
+            "zh": "用于转换和编辑位图图像"
+        },
+        "version": "0.1.0",
+        "website": "https://ffmpeg.org/"
+    },
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" }
+    },
+    "bin": {
+        "path": {
+            "macos": "magick",
+            "windows": "tools/exe/imagemagick/magick.exe"
+        },
+        "required_version": { "min": "6.0" },
+        "version_arguments": ["-version"]
+    }
+}

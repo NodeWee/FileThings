@@ -1,0 +1,114 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "en": "to Audio",
+            "zh": "转音频"
+        },
+        "summary": {
+            "zh": "转换为指定的音频格式",
+            "en": "Convert to specified Audio format"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": [
+            "3g2",
+            "3gp",
+            "3gp2",
+            "3gpp",
+            "3gpp2",
+            "asf",
+            "avi",
+            "divx",
+            "evo",
+            "f4v",
+            "flv",
+            "h264",
+            "h265",
+            "hevc",
+            "m1v",
+            "m2v",
+            "m4v",
+            "mkv",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mts",
+            "mxf",
+            "ogm",
+            "ogv",
+            "rm",
+            "rmvb",
+            "ts",
+            "vob",
+            "webm",
+            "wmv",
+            "wav",
+            "mp3",
+            "aac",
+            "flac",
+            "ogg",
+            "opus",
+            "m4a",
+            "wma"
+        ]
+    },
+    "variables": [
+        {
+            "name": "to_format",
+            "type": "select",
+            "required": true,
+            "label": {
+                "en": "Output Format",
+                "zh": "输出格式"
+            },
+            "options": [
+                {
+                    "label": "MP3",
+                    "value": "mp3"
+                },
+                {
+                    "label": "WAV",
+                    "value": "wav"
+                },
+                {
+                    "label": "OGG",
+                    "value": "ogg"
+                },
+                {
+                    "label": "M4A",
+                    "value": "m4a"
+                },
+                {
+                    "label": "FLAC",
+                    "value": "flac"
+                },
+                {
+                    "label": "AAC",
+                    "value": "aac"
+                }
+            ]
+        },
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true
+        }
+    ]
+}

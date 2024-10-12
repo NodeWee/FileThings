@@ -1,0 +1,316 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "zh": "图像叠加水印",
+            "en": "Overlay Image Watermark"
+        },
+        "summary": {
+            "en": "Overlay an image watermark on the image",
+            "zh": "为图像叠加一个图片水印"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": [
+            "png",
+            "jpg",
+            "jpeg",
+            "heif",
+            "heic",
+            "webp",
+            "bmp",
+            "gif",
+            "tif",
+            "tiff",
+            "ico",
+            "AAI",
+            "ART",
+            "AVS",
+            "BAYER",
+            "BAYERA",
+            "BGR",
+            "BGRA",
+            "BGRO",
+            "BMP",
+            "BMP2",
+            "BMP3",
+            "CAL",
+            "CALS",
+            "CIN",
+            "CLIP",
+            "CMYK",
+            "CMYKA",
+            "CUR",
+            "DATA",
+            "DCX",
+            "DDS",
+            "DPX",
+            "DXT1",
+            "DXT5",
+            "FARBFELD",
+            "FAX",
+            "FF",
+            "FITS",
+            "FL32",
+            "FTS",
+            "FTXT",
+            "G3",
+            "G4",
+            "GIF",
+            "GIF87",
+            "GRAY",
+            "GRAYA",
+            "GROUP4",
+            "HDR",
+            "HRZ",
+            "ICB",
+            "ICO",
+            "ICON",
+            "INLINE",
+            "IPL",
+            "J2C",
+            "J2K",
+            "JNG",
+            "JP2",
+            "JPC",
+            "JPE",
+            "JPEG",
+            "JPG",
+            "JPM",
+            "JPS",
+            "JPT",
+            "JXL",
+            "MAP",
+            "MASK",
+            "MIFF",
+            "MNG",
+            "MONO",
+            "MPC",
+            "MSL",
+            "MSVG",
+            "MTV",
+            "MVG",
+            "NULL",
+            "OTB",
+            "PAL",
+            "PALM",
+            "PAM",
+            "PBM",
+            "PCD",
+            "PCDS",
+            "PCT",
+            "PCX",
+            "PDB",
+            "PFM",
+            "PGM",
+            "PGX",
+            "PHM",
+            "PICON",
+            "PICT",
+            "PJPEG",
+            "PNG",
+            "PNG00",
+            "PNG24",
+            "PNG32",
+            "PNG48",
+            "PNG64",
+            "PNG8",
+            "PNM",
+            "PPM",
+            "PSB",
+            "PSD",
+            "PTIF",
+            "QOI",
+            "RAS",
+            "RGB",
+            "RGBA",
+            "RGBO",
+            "RGF",
+            "SGI",
+            "SIX",
+            "SIXEL",
+            "STRIMG",
+            "SUN",
+            "TGA",
+            "TIFF",
+            "TIFF64",
+            "UYVY",
+            "VDA",
+            "VICAR",
+            "VID",
+            "VIFF",
+            "VIPS",
+            "VST",
+            "WBMP",
+            "WEBP",
+            "WPG",
+            "XBM",
+            "XPM",
+            "XV",
+            "YCbCr",
+            "YCbCrA",
+            "YUV"
+        ]
+    },
+    "variables": [
+        {
+            "name": "watermark_file",
+            "type": "file",
+            "label": {
+                "en": "Watermark Image File",
+                "zh": "水印图像文件"
+            },
+            "filters": [
+                {
+                    "name": {
+                        "en": "Image Files",
+                        "zh": "图像文件"
+                    },
+                    "extensions": ["png", "jpg", "jpeg", "webp", "bmp", "gif"]
+                }
+            ],
+            "required": true
+        },
+        {
+            "name": "gravity",
+            "type": "select",
+            "required": true,
+            "label": {
+                "en": "Position",
+                "zh": "位置"
+            },
+            "default": "Center",
+            "options": [
+                {
+                    "label": {
+                        "en": "Top Left",
+                        "zh": "左上"
+                    },
+                    "value": "NorthWest"
+                },
+                {
+                    "label": {
+                        "en": "Top",
+                        "zh": "顶部"
+                    },
+                    "value": "North"
+                },
+                {
+                    "label": {
+                        "en": "Top Right",
+                        "zh": "右上"
+                    },
+                    "value": "NorthEast"
+                },
+                {
+                    "label": {
+                        "en": "Left",
+                        "zh": "左侧"
+                    },
+                    "value": "West"
+                },
+                {
+                    "label": {
+                        "en": "Center",
+                        "zh": "中间"
+                    },
+                    "value": "Center"
+                },
+                {
+                    "label": {
+                        "en": "Right",
+                        "zh": "右侧"
+                    },
+                    "value": "East"
+                },
+                {
+                    "label": {
+                        "en": "Bottom Left",
+                        "zh": "左下"
+                    },
+                    "value": "SouthWest"
+                },
+                {
+                    "label": {
+                        "en": "Bottom",
+                        "zh": "底部"
+                    },
+                    "value": "South"
+                },
+                {
+                    "label": {
+                        "en": "Bottom Right",
+                        "zh": "右下"
+                    },
+                    "value": "SouthEast"
+                }
+            ]
+        },
+        {
+            "name": "rotation",
+            "type": "float",
+            "required": false,
+            "label": {
+                "en": "Rotation",
+                "zh": "旋转"
+            },
+            "default": 0,
+            "min": 0,
+            "max": 360
+        },
+        {
+            "name": "geometry_x",
+            "type": "int",
+            "required": false,
+            "label": {
+                "en": "Horizontal Offset",
+                "zh": "水平偏移"
+            },
+            "default": 0
+        },
+        {
+            "name": "geometry_y",
+            "type": "int",
+            "required": false,
+            "label": {
+                "en": "Vertical Offset",
+                "zh": "垂直偏移"
+            },
+            "default": 0
+        },
+
+        {
+            "name": "opacity",
+            "type": "float",
+            "required": false,
+            "label": {
+                "zh": "透明度",
+                "en": "Opacity"
+            },
+            "default": 1,
+            "step": 0.1,
+            "min": 0,
+            "max": 1
+        },
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true
+        }
+    ]
+}

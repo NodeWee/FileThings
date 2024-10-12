@@ -1,0 +1,67 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "zh": "清理文件夹",
+            "en": "Clear Folder"
+        },
+        "summary": {
+            "zh": "按指定规则清除文件。例如.DS_Store、Thumbs.db 等",
+            "en": "Clear files according to specified rules. For example, .DS_Store, Thumbs.db, etc."
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": ["/dir", "/dirs", "!/file"]
+    },
+    "variables": [
+        {
+            "name": "method",
+            "type": "select",
+            "label": {
+                "zh": "清理方式",
+                "en": "Clear method"
+            },
+            "required": true,
+            "default": "clear_folder_attribute_files",
+            "value_descriptions": {
+                "clear_folder_attribute_files": {
+                    "zh": "删除 .DS_Store, Thumbs.db, _MACOSX, __MACOSX, desktop.ini 文件",
+                    "en": "Delete .DS_Store, Thumbs.db, _MACOSX, __MACOSX, desktop.ini files"
+                },
+
+                "clear_development_environment_files": {
+                    "zh": "删除 node_modules, __pycache__, .pyc 目录和文件",
+                    "en": "Delete node_modules, __pycache__, .pyc folders and files"
+                }
+            },
+            "style_width": "w-full",
+            "options": [
+                {
+                    "value": "clear_folder_attribute_files",
+                    "label": {
+                        "en": "Clear folder attribute files",
+                        "zh": "清理文件夹属性文件"
+                    }
+                },
+                {
+                    "value": "clear_development_environment_files",
+                    "label": {
+                        "en": "Clear development environment files",
+                        "zh": "清理开发环境文件"
+                    }
+                }
+            ]
+        }
+    ]
+}

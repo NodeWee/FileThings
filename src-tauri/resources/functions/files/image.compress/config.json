@@ -1,0 +1,225 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "zh": "压缩图像",
+            "en": "Compress Image"
+        },
+        "summary": {
+            "zh": "压缩图像数据，以减小文件大小",
+            "en": "Compress image data to reduce file size"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": [
+            "png",
+            "jpg",
+            "jpeg",
+            "heif",
+            "heic",
+            "bmp",
+            "gif",
+            "tif",
+            "tiff",
+            "AAI",
+            "ART",
+            "AVS",
+            "BAYER",
+            "BAYERA",
+            "BGR",
+            "BGRA",
+            "BGRO",
+            "BMP",
+            "BMP2",
+            "BMP3",
+            "CAL",
+            "CALS",
+            "CIN",
+            "CLIP",
+            "CMYK",
+            "CMYKA",
+            "CUR",
+            "DATA",
+            "DCX",
+            "DDS",
+            "DPX",
+            "DXT1",
+            "DXT5",
+            "FARBFELD",
+            "FAX",
+            "FF",
+            "FITS",
+            "FL32",
+            "FTS",
+            "FTXT",
+            "G3",
+            "G4",
+            "GIF",
+            "GIF87",
+            "GRAY",
+            "GRAYA",
+            "GROUP4",
+            "HDR",
+            "HRZ",
+            "ICB",
+            "INLINE",
+            "IPL",
+            "J2C",
+            "J2K",
+            "JNG",
+            "JP2",
+            "JPC",
+            "JPE",
+            "JPEG",
+            "JPG",
+            "JPM",
+            "JPS",
+            "JPT",
+            "JXL",
+            "MAP",
+            "MASK",
+            "MIFF",
+            "MNG",
+            "MONO",
+            "MPC",
+            "MSL",
+            "MSVG",
+            "MTV",
+            "MVG",
+            "NULL",
+            "OTB",
+            "PAL",
+            "PALM",
+            "PAM",
+            "PBM",
+            "PCD",
+            "PCDS",
+            "PCT",
+            "PCX",
+            "PDB",
+            "PFM",
+            "PGM",
+            "PGX",
+            "PHM",
+            "PICON",
+            "PICT",
+            "PJPEG",
+            "PNG",
+            "PNG00",
+            "PNG24",
+            "PNG32",
+            "PNG48",
+            "PNG64",
+            "PNG8",
+            "PNM",
+            "PPM",
+            "PSB",
+            "PSD",
+            "PTIF",
+            "QOI",
+            "RAS",
+            "RGB",
+            "RGBA",
+            "RGBO",
+            "RGF",
+            "SGI",
+            "SIX",
+            "SIXEL",
+            "STRIMG",
+            "SUN",
+            "TGA",
+            "TIFF",
+            "TIFF64",
+            "UYVY",
+            "VDA",
+            "VICAR",
+            "VID",
+            "VIFF",
+            "VIPS",
+            "VST",
+            "WBMP",
+            "WPG",
+            "XBM",
+            "XPM",
+            "XV",
+            "YCbCr",
+            "YCbCrA",
+            "YUV"
+        ]
+    },
+    "variables": [
+        {
+            "name": "to_format",
+            "type": "select",
+            "required": true,
+            "label": {
+                "en": "Output Format",
+                "zh": "输出格式"
+            },
+            "default": "webp",
+            "options": [
+                {
+                    "label": "PNG",
+                    "value": "png"
+                },
+                {
+                    "label": "JPG",
+                    "value": "jpg"
+                },
+                {
+                    "label": "WEBP",
+                    "value": "webp"
+                }
+            ],
+            "value_descriptions": {
+                "png": {
+                    "zh": "使用更好的算法优化PNG图像大小",
+                    "en": "Optimize PNG image size using better algorithms"
+                },
+                "jpg": {
+                    "zh": "有损压缩, 根据指定的质量参数",
+                    "en": "Lossy compression, based on specified quality parameter"
+                },
+                "webp": {
+                    "zh": "同等图像质量, WebP格式具有更小的体积",
+                    "en": "WebP format has smaller size with equivalent image quality"
+                }
+            }
+        },
+        {
+            "when_matches": {
+                "to_format": ["jpg"]
+            },
+            "name": "quality",
+            "type": "integer",
+            "label": {
+                "en": "Quality",
+                "zh": "质量"
+            },
+            "required": true,
+            "default": 80,
+            "min": 1,
+            "max": 100
+        },
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true
+        }
+    ]
+}

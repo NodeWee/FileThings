@@ -1,0 +1,24 @@
+{
+    "type": "tool.exe",
+    "profile": {
+        "title": { "en": "ExifTool" },
+        "summary": {
+            "en": "Used for read metadata in a wide variety of files",
+            "zh": "用于读取各种文件的元数据"
+        },
+        "version": "0.1.0",
+        "website": "https://exiftool.org/"
+    },
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" }
+    },
+    "bin": {
+        "path": {
+            "macos": "exiftool",
+            "windows": "tools/exe/exiftool/exiftool.exe"
+        },
+        "version_arguments": ["-ver"],
+        "required_version": { "min": "10.0" }
+    }
+}

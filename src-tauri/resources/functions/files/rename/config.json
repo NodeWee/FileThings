@@ -1,0 +1,108 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "zh": "重命名",
+            "en": "Rename"
+        },
+        "summary": {
+            "zh": "按序号、拍照时间等指定规则重命名文件",
+            "en": "Rename files by specified rules such as sequence number, photo taken time, etc."
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": ["*"]
+    },
+    "variables": [
+        {
+            "name": "method",
+            "type": "select",
+            "label": {
+                "zh": "重命名方式",
+                "en": "Rename method"
+            },
+            "required": true,
+            "default": "by_numerical_order",
+            "value_descriptions": {
+                "by_numerical_order": {
+                    "en": "Example: 001.txt, 002.txt, ... (ignoring subfolders)",
+                    "zh": "例如 001.txt, 002.txt, ... (忽略子文件夹)"
+                },
+
+                "by_photo_taken_time": {
+                    "en": "Rename the file by the photo taken time, e.g. 2024-01-01_12-00-00.jpg",
+                    "zh": "按照片拍摄时间重命名文件, 例如: 2024-01-01_12-00-00.jpg"
+                }
+            },
+            "style_width": "w-full",
+            "options": [
+                {
+                    "label": {
+                        "en": "By numerical order",
+                        "zh": "按数字序号"
+                    },
+                    "value": "by_numerical_order"
+                },
+                {
+                    "label": {
+                        "en": "By photo taken time",
+                        "zh": "按拍照时间"
+                    },
+                    "value": "by_photo_taken_time"
+                }
+            ]
+        },
+        {
+            "when_matches": {
+                "method": ["by_photo_taken_time"]
+            },
+            "name": "text_pattern",
+            "type": "text",
+            "required": true,
+            "label": {
+                "en": "Text Pattern",
+                "zh": "文本模式"
+            },
+            "default": "{year}-{month}-{day}_{hour}-{minute}-{second}",
+            "hidden": true
+        },
+        {
+            "when_matches": {
+                "method": ["by_numerical_order"]
+            },
+            "name": "start_number",
+            "type": "integer",
+            "label": {
+                "en": "Start number",
+                "zh": "起始数字"
+            },
+            "default": 1,
+            "min": 1
+        },
+        {
+            "when_matches": {
+                "method": ["by_numerical_order"]
+            },
+            "name": "padding_length",
+            "type": "integer",
+            "required": true,
+            "label": {
+                "en": "Padding length",
+                "zh": "填充长度"
+            },
+            "default": 4,
+            "min": 1
+        }
+    ]
+}

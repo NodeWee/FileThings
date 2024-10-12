@@ -1,0 +1,210 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "zh": "转文档",
+            "en": "to Document"
+        },
+        "summary": {
+            "zh": "多种文档格式相互转换, 例如 Markdown, HTML, PDF等",
+            "en": "Convert between various document formats, such as Markdown, HTML, PDF, etc."
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": [
+            "doc",
+            "docx",
+            "odt",
+            "rtf",
+            "txt",
+            "html",
+            "htm",
+            "md",
+            "markdown",
+            "pdf",
+            "epub",
+            "fb2",
+            "xhtml",
+            "ppt",
+            "pptx",
+            "odp",
+            "xls",
+            "xlsx",
+            "ods",
+            "csv",
+            "tsv",
+            "json",
+            "yaml",
+            "xml",
+            "tex",
+            "ltx",
+            "bib",
+            "csl",
+            "ris",
+            "enw",
+            "end",
+            "nbib",
+            "bibtex",
+            "biblatex"
+        ]
+    },
+    "variables": [
+        {
+            "name": "to_format",
+            "type": "select",
+            "required": true,
+            "label": {
+                "en": "Output Format",
+                "zh": "输出格式"
+            },
+            "options": [
+                {
+                    "label": "HTML",
+                    "value": "html"
+                },
+                {
+                    "label": "PDF",
+                    "value": "pdf"
+                },
+                {
+                    "label": "DOCX",
+                    "value": "docx"
+                },
+                {
+                    "label": "ODT",
+                    "value": "odt"
+                },
+                {
+                    "label": "RTF",
+                    "value": "rtf"
+                },
+                {
+                    "label": "TXT",
+                    "value": "txt"
+                },
+                {
+                    "label": "Markdown",
+                    "value": "md"
+                },
+                {
+                    "label": "EPUB",
+                    "value": "epub"
+                },
+                {
+                    "label": "FB2",
+                    "value": "fb2"
+                },
+                {
+                    "label": "XHTML",
+                    "value": "xhtml"
+                },
+                {
+                    "label": "PPT",
+                    "value": "ppt"
+                },
+                {
+                    "label": "PPTX",
+                    "value": "pptx"
+                },
+                {
+                    "label": "ODP",
+                    "value": "odp"
+                },
+                {
+                    "label": "XLS",
+                    "value": "xls"
+                },
+                {
+                    "label": "XLSX",
+                    "value": "xlsx"
+                },
+                {
+                    "label": "ODS",
+                    "value": "ods"
+                },
+                {
+                    "label": "CSV",
+                    "value": "csv"
+                },
+                {
+                    "label": "TSV",
+                    "value": "tsv"
+                },
+                {
+                    "label": "JSON",
+                    "value": "json"
+                },
+                {
+                    "label": "YAML",
+                    "value": "yaml"
+                },
+                {
+                    "label": "XML",
+                    "value": "xml"
+                },
+                {
+                    "label": "TeX",
+                    "value": "tex"
+                },
+                {
+                    "label": "LaTeX",
+                    "value": "ltx"
+                },
+                {
+                    "label": "BibTeX",
+                    "value": "bib"
+                },
+                {
+                    "label": "CSL",
+                    "value": "csl"
+                },
+                {
+                    "label": "RIS",
+                    "value": "ris"
+                }
+            ]
+        },
+        {
+            "when_matches": {
+                "@from_format": ["md", "markdown"],
+                "to_format": ["html", "pdf"]
+            },
+            "name": "html_template_file",
+            "type": "file",
+            "label": {
+                "en": "Template File",
+                "zh": "模板文件"
+            },
+            "filters": [
+                {
+                    "name": {
+                        "en": "HTML File",
+                        "zh": "HTML 文件"
+                    },
+                    "extensions": ["html", "htm"]
+                }
+            ],
+            "required": true
+        },
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true
+        }
+    ]
+}

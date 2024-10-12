@@ -1,0 +1,38 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "en": "Clear Metadata",
+            "zh": "清除元数据"
+        },
+        "summary": {
+            "en": "Clear all metadata of the file (EXIF, XATTR, etc.)",
+            "zh": "清除文件所有元数据（EXIF、XATTR等）"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": ["*"]
+    },
+    "variables": [
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true
+        }
+    ]
+}

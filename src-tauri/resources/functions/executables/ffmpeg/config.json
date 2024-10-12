@@ -1,0 +1,24 @@
+{
+    "type": "tool.exe",
+    "profile": {
+        "title": { "en": "FFmpeg" },
+        "summary": {
+            "en": "Used for converting and editing audio and video",
+            "zh": "用于转换和编辑音频和视频"
+        },
+        "version": "0.1.0",
+        "website": "https://ffmpeg.org/"
+    },
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" }
+    },
+    "bin": {
+        "path": {
+            "macos": "ffmpeg",
+            "windows": "tools/exe/ffmpeg/bin/ffmpeg.exe"
+        },
+        "required_version": { "min": "6.0" },
+        "version_arguments": ["-version"]
+    }
+}

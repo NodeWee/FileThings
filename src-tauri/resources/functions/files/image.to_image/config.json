@@ -1,0 +1,315 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "en": "to Image",
+            "zh": "转图像"
+        },
+        "summary": {
+            "zh": "转换为指定的图像格式",
+            "en": "Convert to specified Image format"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": [
+            "svg",
+            "png",
+            "jpg",
+            "jpeg",
+            "heif",
+            "heic",
+            "webp",
+            "bmp",
+            "gif",
+            "tif",
+            "tiff",
+            "ico",
+            "AAI",
+            "ART",
+            "AVS",
+            "BAYER",
+            "BAYERA",
+            "BGR",
+            "BGRA",
+            "BGRO",
+            "BMP",
+            "BMP2",
+            "BMP3",
+            "CAL",
+            "CALS",
+            "CIN",
+            "CLIP",
+            "CMYK",
+            "CMYKA",
+            "CUR",
+            "DATA",
+            "DCX",
+            "DDS",
+            "DPX",
+            "DXT1",
+            "DXT5",
+            "FARBFELD",
+            "FAX",
+            "FF",
+            "FITS",
+            "FL32",
+            "FTS",
+            "FTXT",
+            "G3",
+            "G4",
+            "GIF",
+            "GIF87",
+            "GRAY",
+            "GRAYA",
+            "GROUP4",
+            "HDR",
+            "HRZ",
+            "ICB",
+            "ICO",
+            "ICON",
+            "INLINE",
+            "IPL",
+            "J2C",
+            "J2K",
+            "JNG",
+            "JP2",
+            "JPC",
+            "JPE",
+            "JPEG",
+            "JPG",
+            "JPM",
+            "JPS",
+            "JPT",
+            "JXL",
+            "MAP",
+            "MASK",
+            "MIFF",
+            "MNG",
+            "MONO",
+            "MPC",
+            "MSL",
+            "MSVG",
+            "MTV",
+            "MVG",
+            "NULL",
+            "OTB",
+            "PAL",
+            "PALM",
+            "PAM",
+            "PBM",
+            "PCD",
+            "PCDS",
+            "PCT",
+            "PCX",
+            "PDB",
+            "PFM",
+            "PGM",
+            "PGX",
+            "PHM",
+            "PICON",
+            "PICT",
+            "PJPEG",
+            "PNG",
+            "PNG00",
+            "PNG24",
+            "PNG32",
+            "PNG48",
+            "PNG64",
+            "PNG8",
+            "PNM",
+            "PPM",
+            "PSB",
+            "PSD",
+            "PTIF",
+            "QOI",
+            "RAS",
+            "RGB",
+            "RGBA",
+            "RGBO",
+            "RGF",
+            "SGI",
+            "SIX",
+            "SIXEL",
+            "STRIMG",
+            "SUN",
+            "TGA",
+            "TIFF",
+            "TIFF64",
+            "UYVY",
+            "VDA",
+            "VICAR",
+            "VID",
+            "VIFF",
+            "VIPS",
+            "VST",
+            "WBMP",
+            "WEBP",
+            "WPG",
+            "XBM",
+            "XPM",
+            "XV",
+            "YCbCr",
+            "YCbCrA",
+            "YUV"
+        ]
+    },
+    "variables": [
+        {
+            "name": "to_format",
+            "type": "select",
+            "required": true,
+            "label": {
+                "en": "Output Format",
+                "zh": "输出格式"
+            },
+            "default": "png",
+            "options": [
+                {
+                    "label": "SVG",
+                    "value": "svg"
+                },
+                {
+                    "label": "PNG",
+                    "value": "png"
+                },
+                {
+                    "label": "JPEG",
+                    "value": "jpeg"
+                },
+                {
+                    "label": "JPG",
+                    "value": "jpg"
+                },
+                {
+                    "label": "WEBP",
+                    "value": "webp"
+                },
+                {
+                    "label": "TIFF",
+                    "value": "tiff"
+                },
+                {
+                    "label": "GIF",
+                    "value": "gif"
+                },
+                {
+                    "label": "BMP",
+                    "value": "bmp"
+                },
+                {
+                    "label": "ICO",
+                    "value": "ico"
+                }
+            ]
+        },
+        {
+            "when_matches": {
+                "to_format": ["svg"]
+            },
+            "when_not_matches": {
+                "@from_format": ["svg"]
+            },
+            "name": "color_colorful",
+            "type": "switch",
+            "label": {
+                "en": "Color",
+                "zh": "颜色"
+            },
+            "true": {
+                "label": {
+                    "en": "Colors",
+                    "zh": "彩色"
+                }
+            },
+            "false": {
+                "label": {
+                    "en": "Black & White",
+                    "zh": "黑白"
+                }
+            },
+            "default": true
+        },
+        {
+            "when_matches": {
+                "@from_format": ["svg"]
+            },
+            "when_not_matches": {
+                "to_format": ["svg"]
+            },
+            "name": "background",
+            "type": "color",
+            "required": false,
+            "label": {
+                "en": "Background Color",
+                "zh": "背景色"
+            },
+            "default": "transparent"
+        },
+        {
+            "when_matches": {
+                "@from_format": ["svg"]
+            },
+            "when_not_matches": {
+                "to_format": ["svg", "ico"]
+            },
+            "name": "width",
+            "type": "integer",
+            "label": {
+                "en": "Width",
+                "zh": "宽度"
+            },
+            "default": 0,
+            "min": 0,
+            "max": 10000,
+            "value_descriptions": {
+                "0": {
+                    "en": "Use original image size",
+                    "zh": "使用原图片尺寸"
+                }
+            }
+        },
+        {
+            "when_matches": {
+                "@from_format": ["svg"]
+            },
+            "when_not_matches": {
+                "to_format": ["svg", "ico"]
+            },
+            "name": "height",
+            "type": "integer",
+            "label": {
+                "en": "Height",
+                "zh": "高度"
+            },
+            "default": 0,
+            "min": 0,
+            "max": 10000,
+            "value_descriptions": {
+                "0": {
+                    "en": "Use original image size",
+                    "zh": "使用原图片尺寸"
+                }
+            }
+        },
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "required": true
+        }
+    ]
+}

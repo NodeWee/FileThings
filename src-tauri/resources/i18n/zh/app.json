@@ -1,0 +1,233 @@
+{
+    "nav": {
+        "view": "信息",
+        "process": "处理",
+        "clean": "清理",
+        "tasks": "任务",
+        "tools": "依赖",
+        "settings": "设置"
+    },
+    "view": {
+        "count": "计数"
+    },
+    "settings": {
+        "title": "设置",
+        
+        "source-code": {
+            "title": "源码",
+            "summary": "查看应用源码，或参与贡献"
+        },
+
+        "language": {
+            "title": "语言",
+            "summary": "切换显示语言",
+            "select-language": "选择语言",
+            "placeholder": "选择语言"
+        },
+        "version": {
+            "current": "当前版本",
+            "latest": "最新版本",
+            "to-check": "检查更新",
+            "checking": "检查更新...",
+            "updating": "更新中...",
+            "has-new": "有新版本",
+            "open-download-page": "打开下载页",
+            "is-up-to-date": "已是最新版本！",
+            "new-ver-ready": "新版本已就绪",
+            "new-ver-downloaded": "新版本已下载",
+            "restart": "重启应用",
+            "install-now": "立即安装"
+        },
+        "update": {
+            "title": "更新",
+            "auto-update": "自动更新",
+            "auto-update-summary": "自动检查应用新版本和下载安装包。以及更新语言包和文件功能脚本",
+            "on": "开启",
+            "off": "关闭"
+        },
+
+        "feedback": {
+            "title": "反馈与联络",
+            "online": "在线反馈",
+            "online-summary": "报告问题或功能需求",
+            "discuss-on-github-summary": "创建对话，浏览问题与回答",
+            "email": "邮件联络",
+            "open-email": "新邮件",
+            "bug-report": "报告问题",
+            "feature-request": "功能需求"
+        },
+        "dirs": {
+            "title": "数据目录",
+            "app-data-dir": "应用数据目录",
+            "app-data-dir-summary": "应用存储数据的目录"
+        }
+    },
+    "tools": {
+        "title": "依赖",
+        "description": "文件处理所依赖的外部工具",
+        "no-tools": "没有可用的工具",
+        "executable-tools": "可执行程序",
+        "model-tools": "模型",
+        "website": "网站",
+        "checking": "检查中...",
+        "install": "安装",
+        "installing": "安装中...",
+        "available": "已安装",
+        "installed": "已安装",
+        "uninstalled": "未安装",
+        "uninstall": "卸载",
+        "unavailable": "未安装",
+        "download": "下载",
+        "downloading": "下载中...",
+        "auto-install": "自动安装",
+        "manual-install": "手动安装",
+        "auto-installing": "自动安装中...",
+        "install-success": "{0} 已安装。",
+        "install-error": "{0} 安装失败。{1}",
+        "install-failed": "{0} 安装失败",
+        "download-success": "{0} 下载成功。",
+        "download-error": "{0} 下载失败。{1}",
+        "unzipping": "解压中..."
+    },
+    "tasks": {
+        "title": "任务",
+        "description": "文件处理任务",
+        "selected-files-changed": "已选文件发生变化"
+    },
+    "title": "文件那些事儿",
+    "notification": "通知",
+    "open_website": "打开网站",
+
+    "home": {
+        "title": "文件"
+    },
+    "things": {
+        "title": "功能",
+        "expand-all": "展开所有功能",
+        "select": "选择功能",
+        "no-matched": "没有匹配的功能",
+        "run": "执行",
+        "cancel": "取消",
+        "running": "执行中",
+        "done": "完成",
+        "stared": "标记为常用",
+        "un-stared": "取消常用",
+        "file": {
+            "count_files": {
+                "dir_quantity": "目录数量",
+                "file_quantity": "文件数量",
+                "file_type_quantity": "文件类型数量",
+                "total_size": "大小",
+                "file_path": "文件路径",
+                "file_size": "文件大小",
+                "file_type": "文件类型",
+                "total_sum": "总计",
+                "file_size_sum": "大小"
+            }
+        }
+    },
+
+    "paths": {
+        "files": "文件",
+        "file-landing-placeholder": "拖放文件到窗口，或点击这里选择{0}",
+        "info": "信息",
+        "remove": "移除",
+        "clear": "清除",
+        "cancel": "取消",
+        "add-files": "添加文件",
+        "add-folders": "添加目录",
+        "selected": "已选",
+        "selected-paths": "已选路径",
+        "clear-selected": "清除已选"
+    },
+    "file": {
+        "view": "查看文件",
+        "save": "保存",
+        "save_to": "保存到文件",
+        "save_as": "另存为",
+        "save_success": "保存成功",
+        "save_failed": "保存失败",
+        "image": "图片"
+    },
+    "creator": {
+        "title": "创建",
+        "create_file": "创建文件",
+        "config": "配置",
+        "config_summary": "画板尺寸等",
+        "dom_editor": "视图",
+        "code_editor": "代码",
+        "template": "模板",
+        "templates": "模板",
+        "no_template_data": "无模板数据",
+        "select_template": "选择模板",
+        "emoji_type": "Emoji 图像风格",
+        "text-to-svg": "文本转矢量图",
+        "canvas": {
+            "bg_color": "画板背景色",
+            "size": "画板尺寸",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "select_font": "选择字体",
+        "font_size": "字体大小",
+        "text_color": "文字颜色",
+        "bg_color": "背景颜色",
+        "opacity": "透明度",
+        "tip": {
+            "dom_right_click_menu": "右键点击元素可设置字体等"
+        }
+    },
+    "sign": {
+        "caesura": "、",
+        "colon": "：",
+        "comma": "，",
+        "dot": "。"
+    },
+    "option": {
+        "title": "选项",
+        "example": "示例",
+        "save_to": "保存到",
+        "select_save_to_path": "选择保存路径",
+        "select_font": "选择字体",
+        "no_font_data": "无字体数据"
+    },
+    "result": {
+        "title": "{0}的结果",
+        "show": "查看结果",
+        "outputs": "输出",
+        "saved": "已保存",
+        "ignored": "已忽略",
+        "details": "文件详情",
+        "view": {
+            "counts": {
+                "total_sum": "总计",
+                "dir_num": "目录数",
+                "file_num": "文件数",
+                "total_size": "总体积",
+                "file_path": "文件路径",
+                "file_type": "文件类型",
+                "file_type_num": "文件类型数"
+            }
+        },
+        "detail": {
+            "counter": {
+                "path": "文件路径",
+                "failed": "失败",
+                "ok": "成功",
+                "ignored": "忽略",
+                "total": "总计"
+            },
+            "file": {
+                "serial": "序号",
+                "status": "状态",
+                "source": "源文件",
+                "target": "目标文件",
+                "message": "说明"
+            }
+        },
+        "task_error": "发生错误"
+    },
+    "error": {
+        "failed-to-load-translation": "加载语言失败：{1}"
+    }
+}

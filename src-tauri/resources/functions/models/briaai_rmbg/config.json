@@ -1,0 +1,21 @@
+{
+    "type": "tool.model",
+    "profile": {
+        "title": "briaai/rmbg1.4",
+        "summary": {
+            "en": "Used for remove image background",
+            "zh": "用于移除图片背景"
+        },
+        "version": "0.1.0",
+        "website": "https://huggingface.co/briaai/RMBG-1.4"
+    },
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" }
+    },
+    "bin": {
+        "path": {
+            "*": "tools/model/briaai_rmbg-1.4_model.onnx"
+        }
+    }
+}

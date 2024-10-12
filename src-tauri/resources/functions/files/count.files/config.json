@@ -1,0 +1,27 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "en": "Count Files",
+            "zh": "文件计数"
+        },
+        "summary": {
+            "zh": "统计文件数量和体积",
+            "en": "Count files and their sizes"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": ["/dir", "/dirs", "/files", "/paths"]
+    },
+    "variables": []
+}

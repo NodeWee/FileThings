@@ -1,0 +1,232 @@
+{
+    "nav": {
+        "view": "Info",
+        "process": "Process",
+        "clean": "Clean",
+        "tasks": "Tasks",
+        "tools": "Dependencies",
+        "settings": "Settings"
+    },
+    "view": {
+        "count": "计数"
+    },
+    "settings": {
+        "title": "Settings",
+        "source-code": {
+            "title": "Source Code",
+            "summary": "View the source code of the app, or contribute to it"
+        },
+
+        "language": {
+            "title": "Language",
+            "summary": "Switch the display language",
+            "select-language": "Select Language",
+            "placeholder": "Select language"
+        },
+
+        "version": {
+            "current": "Current version",
+            "latest": "Latest version",
+            "to-check": "Check for updates",
+            "checking": "Checking...",
+            "updating": "Updating...",
+            "has-new": "New version available",
+            "open-download-page": "Open Download Page",
+            "is-up-to-date": "is up to date!",
+            "new-ver-ready": "New version is ready",
+            "new-ver-downloaded": "New version downloaded",
+            "restart": "Restart to update",
+            "install_now": "Install now"
+        },
+        "update": {
+            "title": "Update",
+            "auto-update": "Auto Update",
+            "auto-update-summary": "Auto check for new versions of the app and download installation packages. And update language packs and file function scripts",
+            "on": "On",
+            "off": "Off"
+        },
+
+        "feedback": {
+            "title": "Feedback & Contact",
+            "online": "Online feedback",
+            "online-summary": "Bug report or feature request",
+            "discuss-on-github-summary": "Create conversation, browse questions & answers",
+            "email": "Contact with Email",
+            "open-email": "New Email",
+            "bug-report": "Bug report",
+            "feature-request": "Feature request"
+        },
+        "dirs": {
+            "title": "Data directories",
+            "app-data-dir": "App Data Directory",
+            "app-data-dir-summary": "The directory where the app stores data"
+        }
+    },
+    "tools": {
+        "title": "Dependencies",
+        "description": "External tools that file processing depends on",
+        "no-tools": "No available tools",
+        "executable-tools": "Executables",
+        "model-tools": "Models",
+        "website": "Website",
+        "checking": "Checking...",
+        "available": "Installed",
+        "unavailable": "Unavailable",
+        "install": "Install",
+        "installing": "Installing...",
+        "installed": "Installed",
+        "uninstalled": "Uninstalled",
+        "uninstall": "Uninstall",
+        "download": "Download",
+        "downloading": "Downloading...",
+        "auto-install": "Auto install",
+        "manual-install": "Manual install",
+        "auto-installing": "Auto installing...",
+        "install-success": "{0} installed successfully.",
+        "install-error": "{0} installation failed. {1}",
+        "install-failed": "{0} installation failed.",
+        "download-success": "{0} downloaded successfully.",
+        "download-error": "{0} download failed. {1}",
+        "unzipping": "Unzipping..."
+    },
+    "tasks": {
+        "title": "Tasks",
+        "description": "File processing tasks",
+        "selected-files-changed": "Selected files changed"
+    },
+    "title": "FileThings",
+    "notification": "Notification",
+    "open_website": "Open Website",
+    "home": {
+        "title": "Files"
+    },
+    "things": {
+        "title": "Things",
+        "expand-all": "Expand all things",
+        "select": "Select Thing",
+        "no-matched": "No matched thing",
+        "run": "Run",
+        "cancel": "Cancel",
+        "running": "Running...",
+        "done": "Done",
+        "stared": "Set as Favorite",
+        "un-stared": "Unset as Favorite",
+        "file": {
+            "count_files": {
+                "dir_quantity": "Dir Quantity",
+                "file_quantity": "File Quantity",
+                "file_type_quantity": "File Type Quantity",
+                "total_size": "Size",
+                "file_path": "File Path",
+                "file_size": "File Size",
+                "file_type": "File Type",
+                "total_sum": "Total",
+                "file_size_sum": "Size"
+            }
+        }
+    },
+
+    "paths": {
+        "files": "Files",
+        "file-landing-placeholder": "Drag and drop files to the window, or click here to select {0}",
+        "info": "Info",
+        "remove": "Remove",
+        "clear": "Clear",
+        "cancel": "Cancel",
+        "add-files": "Add Files",
+        "add-folders": "Add Folders",
+        "selected": "Selected",
+        "selected-paths": "Selected Paths",
+        "clear-selected": "Clear Selected"
+    },
+    "file": {
+        "view": "View file",
+        "save": "Save",
+        "save_to": "Save to file",
+        "save_as": "Save as",
+        "save_success": "Saved",
+        "save_failed": "Failed to save",
+        "image": "Image"
+    },
+    "creator": {
+        "title": "Create",
+        "create_file": "Create File",
+        "config": "Config",
+        "config_summary": "Canvas size, etc.",
+        "dom_editor": "View",
+        "code_editor": "Code",
+        "template": "Template",
+        "templates": "Templates",
+        "no_template_data": "No template data",
+        "select_template": "Select template",
+        "emoji_type": "Emoji image style",
+        "text-to-svg": "Text to SVG",
+        "canvas": {
+            "bg_color": "Canvas background",
+            "size": "Canvas size",
+            "width": "Width",
+            "height": "Height"
+        },
+        "select_font": "Select font",
+        "font_size": "Font size",
+        "text_color": "Text color",
+        "bg_color": "Background color",
+        "opacity": "Opacity",
+        "tip": {
+            "dom_right_click_menu": "Right-click on the element to set the font, etc."
+        }
+    },
+    "sign": {
+        "caesura": ",",
+        "colon": ":",
+        "comma": ",",
+        "dot": "."
+    },
+    "option": {
+        "title": "Options",
+        "example": "Example",
+        "save_to": "Save To",
+        "select_font": "Select Font",
+        "select_save_to_path": "Select Save To Path"
+    },
+    "result": {
+        "title": "Result of {0}",
+        "show": "View Result",
+        "outputs": "Outputs",
+        "saved": "Saved",
+        "ignored": "Ignored",
+        "details": "File Details",
+        "view": {
+            "counts": {
+                "total_sum": "Total",
+                "dir_num": "Directories",
+                "file_num": "Files",
+                "total_size": "Total Size",
+                "file_path": "File Path",
+                "file_type": "File Type",
+                "file_type_num": "File Type Quantity"
+            }
+        },
+        "detail": {
+            "counter": {
+                "path": "File Path",
+                "failed": "Failed",
+                "ok": "Ok",
+                "ignored": "Ignored",
+                "total": "Total"
+            },
+            "file": {
+                "serial": "Serial",
+                "status": "Status",
+                "source": "Source File",
+                "target": "Target File",
+                "message": "Message"
+            }
+        },
+        "task_error": "Task Error"
+    },
+
+    "error": {
+        "failed-to-load-translation": "Failed to load language: {1}"
+    }
+}

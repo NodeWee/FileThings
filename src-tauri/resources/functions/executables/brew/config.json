@@ -1,0 +1,45 @@
+{
+    "type": "tool.exe",
+    "profile": {
+        "title": { "en": "Homebrew" },
+        "summary": {
+            "en": "The Package Manager. Used to install tools",
+            "zh": "软件包管理器。用于安装工具软件"
+        },
+        "version": "0.1.0",
+        "website": "https://brew.sh/"
+    },
+    "matches": {
+        "platforms": ["macos", "linux"],
+        "app": { "min": "0.7" }
+    },
+    "bin": {
+        "path": {
+            "macos": "brew",
+            "linux": "brew"
+        },
+        "version_arguments": ["-v"],
+        "required_version": { "min": "4.0" },
+        "installation": {
+            "auto": false,
+            "manual": {
+                "en": {
+                    "links": [
+                        {
+                            "text": "Homebrew Website",
+                            "url": "https://brew.sh/"
+                        }
+                    ]
+                },
+                "zh": {
+                    "links": [
+                        {
+                            "text": "清华大学镜像站的文档",
+                            "url": "https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "type": "file",
+    "profile": {
+        "title": {
+            "zh": "合并文件切片",
+            "en": "Join file slices"
+        },
+        "summary": {
+            "en": "Join binary file slices into a single file",
+            "zh": "将二进制文件切片合并为单个文件"
+        },
+        "version": "0.1.0",
+        "website": "https://filethings.net/",
+        "authors": [
+            {
+                "name": "filethings.net",
+                "page": "https://filethings.net/"
+            }
+        ]
+    },
+
+    "matches": {
+        "platforms": ["macos", "windows", "linux"],
+        "app": { "min": "0.7" },
+        "extensions": ["001"]
+    },
+    "variables": [
+        {
+            "name": "@save_to",
+            "type": "@save_to",
+            "label": {
+                "en": "Save To",
+                "zh": "保存到"
+            },
+            "is_dir": true,
+            "required": false
+        }
+    ]
+}
